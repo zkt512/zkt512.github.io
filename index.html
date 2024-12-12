@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif; /* 更浪漫的字体 */
+      background-image: url('bj.png'); /* 背景图片 */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff; /* 文字颜色 */
+    }
+    .container {
+      text-align: center;
+      background-color:#ff69b4; /* 半透明背景 */
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 600px; /* 最大宽度 */
+    }
+    h1 {
+      color: #ffffff; /* 标题颜色 */
+      margin: 0;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    button {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s; /* 过渡效果 */
+    }
+    button:hover {
+      background-color: #ff3e81;
+    }
+    @keyframes popIn {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .container {
+      animation: popIn 1s ease forwards; /* 动画效果 */
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <h1>[你的名字]</h1>
+  <p>我想对你说...</p>
+  <p>[表白的话]</p>
+  <a href="https://zkt512.github.io/" class="link-button">
+    <button type="button">点击跳转</button>
+  </a>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/index/web.js"></script>
+</div>
+
+</body>
+</html>
