@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱你哟</title>
+  <link rel="shortcut icon" href="tb.ico">
+  <style>
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url('bj2.png'); /* 背景图片 */
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      overflow: hidden;
+    }
+
+    .heart-container {
+      width: 200px;
+      margin: 0 auto;
+      position: relative;
+
+    }
+
+    .heart瓣 {
+      position: absolute;
+      background-color: transparent;
+      background-size: cover;
+      border-radius: 5%;
+      animation: appear 1s ease-in-out forwards;
+    }
+
+    /* 定义每个心瓣的位置和动画延迟 */
+    .heart1 {top: -75px; left: 0; width: 200px; height: 150px; background-image: url('zj.jpg'); animation-delay: 0.8s; }
+    .heart2 {top: -150px; left: 0; width: 75px; height: 75px; background-image: url('zs.jpg'); animation-delay: 0.1s; }
+    .heart3 {top: -150px; left: 125px; width: 75px; height: 75px; background-image: url('ys.jpg'); animation-delay: 0.2s; }
+    .heart4 {top: -75px; left: -75px; width: 75px; height: 75px; background-image: url('zz.jpg'); animation-delay: 0.3s; }
+    .heart5 {top: -75px; left: 200px; width: 75px; height: 75px; background-image: url('yz.jpg'); animation-delay: 0.4s; }
+    .heart6 {top: 75px; left: 62.5px; width: 75px; height: 75px; background-image: url('zx.jpg'); animation-delay: 0.5s; }
+
+    @keyframes appear {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/index/web.js"></script>
+<div class="heart-container">
+  <div class="heart瓣 heart1"></div>
+  <div class="heart瓣 heart2"></div>
+  <div class="heart瓣 heart3"></div>
+  <div class="heart瓣 heart4"></div>
+  <div class="heart瓣 heart5"></div>
+  <div class="heart瓣 heart6"></div>
+
+  <!-- 可以继续添加更多的心瓣 -->
+</div>
+
+</body>
+</html>
